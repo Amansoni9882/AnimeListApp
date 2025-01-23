@@ -53,7 +53,7 @@ class DetailsActivity : AppCompatActivity() {
                     binding?.imageViewIV?.visibility = View.GONE
                 }else{
                     binding?.imageViewIV?.let { it1 ->
-                        Glide.with(this).load(it.data.trailer.images.large_image_url).into(
+                        Glide.with(this).load(it.data.images.jpg.large_image_url).into(
                             it1
                         )
                     }
